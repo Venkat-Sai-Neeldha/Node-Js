@@ -47,6 +47,7 @@ function Loginpage() {
           placeholder='Enter your email'
           value={formData.email}
           onChange={handleChange}
+          required
         />
       </div>
       <div id='pass'>
@@ -57,6 +58,7 @@ function Loginpage() {
           placeholder='enter your password'
           value={formData.password}
           onChange={handleChange}
+          required
         />
       </div>
       <button type='submit' onClick={handleSubmit}>

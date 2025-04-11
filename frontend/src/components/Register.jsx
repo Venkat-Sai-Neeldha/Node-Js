@@ -45,6 +45,7 @@ function Register() {
           placeholder='Enter your name'
           value={formData.name}
           onChange={handleChange}
+          required
         />
       </div>
       <div className='regform'>
@@ -55,6 +56,7 @@ function Register() {
           placeholder='Enter your Email'
           value={formData.email}
           onChange={handleChange}
+          required
         />
       </div>
       <div className='regform'>
@@ -65,6 +67,7 @@ function Register() {
           placeholder='Enter your password'
           value={formData.password}
           onChange={handleChange}
+          required
         />
       </div>
       <div className='regform'>
@@ -75,6 +78,7 @@ function Register() {
           placeholder='enter your mobile number'
           value={formData.phone}
           onChange={handleChange}
+          required
         />
       </div>
       <button type='submit' onClick={handleSubmit}>
