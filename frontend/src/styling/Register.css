@@ -1,28 +1,54 @@
-.regcon{
+.regcon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 70vh;
     width: 30vw;
-   border: 2px dotted gray;
-   margin: 0 auto;
-   box-sizing: border-box;
+    border: 2px double gray;
+    margin: 0 auto;
+    background-color: rgba(230, 228, 228, 0.5);
+    padding: 20px;
+    gap: 20px;
 }
-.regform{
+
+.regform {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 10vh;
     width: 25vw;
     font-size: 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    margin-bottom: 15px;
 }
-.regform input{
+
+.regform label {
+    width: 100px; 
+    text-align: right;
+    margin-right: 15px;
+}
+
+.regform input {
+    flex: 1;
     height: 30px;
-    width: 90%;
     border: 1px solid gray;
     border-radius: 10px;
-    box-sizing: border-box;
+    padding: 0 10px;
 }
+
+button {
+    background-color: #272f9c;
+    color: white;
+    width: 150px;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
