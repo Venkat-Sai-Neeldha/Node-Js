@@ -38,6 +38,10 @@ function Welcome() {
     <div className="con">
       <h2>Welcome!</h2>
       <p>Logged in as: {userEmail}</p>
+      <button onClick={() => {
+        localStorage.removeItem('token');
+        navigate('/login');
+      }}>Logout</button>
       
     </div>
   );
