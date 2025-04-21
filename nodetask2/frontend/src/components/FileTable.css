@@ -1,0 +1,153 @@
+.file-manager {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background:rgb(255,255,255 ,0.7 );
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.col-preview {
+    width: 100px;
+}
+
+.col-name {
+    width: 150px;
+}
+
+.col-filename {
+    width: 200px;
+}
+
+.col-upload-date {
+    width: 120px;
+}
+
+.col-modified-date {
+    width: 120px;
+}
+
+.col-actions {
+    width: 160px; 
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    height: auto;
+}
+
+.preview-cell {
+    padding: 5px;
+    width: 100px;
+    height: 80px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 4px;
+    width: 100%;
+}
+
+.edit-btn, .delete-btn {
+    flex: 1; 
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px; 
+    min-width: 0;
+    overflow: hidden;
+    
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.upload-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.add-file-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+.error-message {
+    color: #f44336;
+    padding: 10px;
+    margin: 10px 0;
+    background: #fee;
+    border-radius: 4px;
+}
+
+.edit-btn:hover, .delete-btn:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
