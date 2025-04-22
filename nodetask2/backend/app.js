@@ -17,7 +17,7 @@ if (!fs.existsSync(uploadsDir)){
     fs.mkdirSync(uploadsDir, { recursive: true });
 }
 
-// CORS configuration
+
 app.use(cors({
     origin: 'http://localhost:5173',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -40,7 +40,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/files', fileRoutes);
 
-// Error handler
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ error: 'Something broke!' });

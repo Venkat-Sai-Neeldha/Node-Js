@@ -1,5 +1,5 @@
 const HttpStatus = {
-    // 2xx Success
+    
     OK: {
         code: 200,
         message: 'OK'

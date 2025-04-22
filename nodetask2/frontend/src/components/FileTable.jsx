@@ -13,7 +13,7 @@ const FileTable = () => {
     const PLACEHOLDER_IMAGE = 'https://www.dummyimg.in/placeholder';
 
     const getImageUrl = (file) => {
-        // Check if file.img is an object or string
+    
         const imgPath = typeof file.img === 'object' ? file.img.path : file.img;
         
         if (!imgPath) {

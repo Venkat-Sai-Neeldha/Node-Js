@@ -137,7 +137,7 @@ exports.update = async (req, res) => {
 
             if (req.file) {
                 updateData.filename = req.file.filename;
-                updateData.img = 'uploads/' + req.file.filename; // Add 'uploads/' prefix
+                updateData.img = 'uploads/' + req.file.filename; 
             }
 
             const [num] = await File.update(updateData, {
